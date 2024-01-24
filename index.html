@@ -1,593 +1,700 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liens pratiques & Astuces Warframe</title>
-    <style>
-        ::-webkit-scrollbar {
-            display: none;
-        }
-
-        body {
-            font-family: "Arial", sans-serif;
-            background-color: #111;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden;
-            line-height: 25px;
-        }
-
-        header {
-            background-color: #0077bb;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            color: #fff;
-        }
-
-        h3 {
-            margin-top: 50px;
-        }
-
-        summary {
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        summary:hover {
-            text-decoration: underline;
-        }
-
-        h2 {
-            user-select: none;
-            cursor: pointer;
-            margin-bottom: 20px;
-            color: #bb6400;
-        }
-
-        .title {
-            user-select: none;
-            cursor: pointer;
-            color: #bb6400;
-            font-size: 25px;
-        }
-
-        .title:hover {
-            text-decoration: underline;
-            color: #e58d28;
-        }
-
-        details>details {
-            padding-left: 25px;
-            margin-top: 50px;
-        }
-
-        section {
-            width: 900px;
-            padding: 20px;
-            margin: 20px;
-            border: #7a7a7a solid 1px;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #1e98de;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #59b9f1;
-            text-decoration: underline;
-        }
-
-        ul>li>ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            width: 100%;
-            background: #333333;
-            margin: 50px 0;
-        }
-
-        table {
-            width: 100%;
-            max-width: 800px;
-            border-collapse: collapse;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #333333;
-        }
-
-        tr:hover {
-            background-color: #252525;
-            user-select: none;
-        }
-
-        code {
-            background-color: black;
-            color: white;
-            border: gray 2px solid;
-            border-radius: 5px;
-            padding: 2px 3px;
-            user-select: none;
-            font-family: monospace;
-            font-size: 15px;
-            white-space: nowrap;
-        }
-
-        /* Responsive Styles */
-        @media (min-width: 300px) {
-            section {
-                width: 70%;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Liens pratiques & Astuces Warframe</title>
+            <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:500|Oswald:200&subset=cyrillic');
+    
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                --mainActive: #d7be72;
+                --mainNormal: #a49158;
+                --mainShadow: #564c2e;
+                --mainLink: #c39e75;
+                --mainActiveLink: #eae3ce;
             }
-        }
-
-        @media (min-width: 900px) {
-            section {
-                width: 60%;
+    
+            body {
+                background: #111;
+                background-size: cover;
+                font-family: 'Open Sans', sans-serif;
+                color: var(--mainNormal);
             }
-        }
-
-        @media (min-width: 1200px) {
-            section {
-                width: 50%;
+    
+            input,
+            textarea,
+            button {
+                font-family: inherit;
+                color: inherit;
             }
-        }
-
-        .weakness {
-            color: #009688;
-        }
-
-        .resistance {
-            color: #d32f2f;
-        }
-
-        img {
-            position: relative;
-            bottom: -4.5px;
-            width: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Liens pratiques & Astuces Warframe</h1>
-    </header>
-
-    <section>
-        <details class="section">
-            <summary class="title">Nouveau ou de retour sur le jeu depuis un moment ?</summary>
-            <ul>
-                <li>
-                    <a href="https://www.warframe.com/fr/game/quickstart" target="_blank">Guide de démarrage rapide
-                        officiel</a>
-                </li>
-                <li>
-                    <a href="https://www.warframe.com/fr/news/new-player-guide" target="_blank">Guide pour les nouveaux
-                        joueurs officiel</a>
-                </li>
-                <li>
-                    <a href="https://www.warframe.com/fr/news/returning-player-guide" target="_blank">Guide de retour
-                        officiel</a>
-                </li>
-                <li>
-                    <a href="https://www.warframe.com/fr/news/operator-report" target="_blank">Récapitulatif de
-                        l'histoire</a>
-                </li>
-            </ul>
-        </details>
-    </section>
-
-    <section>
-        <details class="section">
-            <summary class="title">Guides et Astuces</summary>
-            <ul>
-                <li>
-                    <a href="https://overframe.gg/tier-list/warframes/" target="_blank">Pour voir les meilleurs
-                        builds</a>
-                </li>
-                <li>
-                    <a href="https://warframe.fandom.com/fr/wiki/D%C3%A9g%C3%A2ts" target="_blank">Dégâts, résistances & faiblesse des ennemis</a>
-                </li>
-                <li>
-                    <a href="https://vvhitewarframe.fr/" target="_blank">Tutos en tout genre</a>
-                </li>
-                <li>
-                    <a href="https://www.alecaframe.com/" target="_blank">Trouver des pièces d'armes de warframes
-                        etc</a>
-                </li>
-                <li>
-                    <a href="https://warframe.market/" target="_blank">Voir, acheter & vendre des pièces Prime contre du
-                        Platine</a>
-                </li>
-                <li>
-                    <a href="https://hub.warframestat.us/" target="_blank">Infos concernant l'état des mondes &
-                        évènements
-                        du jeu en temps
-                        réel</a>
-                </li>
-                <li>
-                    <a href="https://www.warframe.com/fr/droptables" target="_blank">Site officiel des drops sur
-                        Warframe</a>
-                </li>
-                <li>
-                    <a href="https://wf.xuerian.net/#welcome" target="_blank">Pour les férus de reliques</a>
-                </li>
-                <li>
-                    <a href="https://www.warframe.com/fr/mobile-app" target="_blank">Appli mobile officielle</a>
-                </li>
-                <li>
-                    Deux très bons youtubeurs Français pour des tutos & astuces de farm,
-                    etc :
+    
+            a{
+                color: var(--mainLink);
+                text-decoration: none;
+            }
+    
+            a:hover{
+                text-decoration: underline;
+                color:var(--mainActiveLink);
+            }
+    
+            h3{
+                color: var(--mainActive);
+                font-family: 'Oswald', sans-serif;
+                letter-spacing: 4px;
+                margin-top: 50px;
+                margin-bottom: 25px;
+            }
+    
+            h1,
+            h2,
+            h3,
+            button {
+                text-transform: uppercase;
+            }
+    
+            h1,
+            h2{
+                color: var(--mainActive);
+                font-family: 'Oswald', sans-serif;
+                letter-spacing: 4px;
+                margin-bottom: 50px;
+                line-height: 1.4;
+            }
+            ul>li>ul {
+                margin-top: 10px;
+                padding-left: 20px;
+            }
+    
+            li {
+                margin-bottom: 10px;
+            }
+    
+            p{
+                line-height: 1.3;
+            }
+    
+            details {
+                padding-left: 25px;
+                margin-top: 50px;
+            }
+    
+            summary {
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+    
+            summary:hover {
+                text-decoration: underline;
+            }
+            code {
+                background-color: black;
+                color: var(--mainNormal);
+                border: var(--mainNormal) 2px solid;
+                border-radius: 5px;
+                padding: 2px 3px;
+                user-select: none;
+                font-family: monospace;
+                font-size: 15px;
+                white-space: nowrap;
+            }
+    
+            table {
+                width: 100%;
+                max-width: 800px;
+                border-collapse: collapse;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+    
+            th,
+            td {
+                border: 1px solid #dddddd80;
+                padding: 8px;
+                text-align: left;
+            }
+    
+            th {
+                background-color: #3333337c;
+            }
+    
+            tr:hover {
+                background-color: #25252588;
+                user-select: none;
+            }
+    
+            .popupWrapper {
+                background-color: #111;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                position: fixed;
+            }
+    
+            .zone {
+                margin: auto 10% auto 5%;
+                width: 100%;
+                height: 80%;
+                line-height: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .nav {
+                position: relative;
+                height: 100%;
+                width: 20%;
+                float: left;
+                margin-right: 20px;
+                border-right: 1px solid var(--mainShadow);
+                overflow: hidden;
+            }
+    
+            .nav ul {
+                list-style: none;
+                padding: 150px 0 0 0;
+                margin: 0;
+            }
+    
+            .nav ul li,
+            .zone p {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, .5), 0 0 1em var(--mainShadow);
+            }
+    
+            .nav ul li {
+                font-weight: bold;
+                display: flex;
+                line-height: 28px;
+                margin: 7px;
+                padding: 5px 0;
+                cursor: pointer;
+            }
+    
+            .nav ul li i {
+                font-size: 28px;
+                margin: 0 7px;
+            }
+    
+            .nav ul li:first-child,
+            .nav ul li:last-child {
+                margin: 0 7px;
+            }
+    
+            .nav ul li:hover,
+            .activeTab {
+                color: var(--mainActive);
+            }
+    
+            .zone p {
+                opacity: .75;
+            }
+    
+            .zone button:last-child {
+                margin-right: 10px;
+            }
+    
+            .content {
+                margin-left: 25%;
+            }
+    
+            .img {
+                position: absolute;
+                z-index: 1;
+                width: 200px;
+                transition: 0.5s;
+                top: 0;
+                left: 20px;
+            }
+    
+            .img:hover {
+                filter: drop-shadow(var(--mainNormal)  0 0 15px);
+            }
+    
+        </style>
+    </head>
+    
+    <body>
+    
+        <div class="popupWrapper">
+            <div class="zone">
+                <div class="nav">
+                    <a href="http://www.warframe.com">
+                        <img class="img" src="logov2.png" style="border:0">
+                    </a>
                     <ul>
-                        <li>
-                            <a href="https://www.youtube.com/@PANDAAHH/videos" target="_blank">Pandaah</a>
+                        <li class="tabButton activeTab" onclick="toggleTab('newMenuContent')">
+                            <i class="la newMenuBtn"></i>
+                            Nouveau joueur?
                         </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCffeBUU4GfgCouaNt-h_-tw" target="_blank">VVhite
-                                Angel</a>
+                        <li class="tabButton" onclick="toggleTab('guidesMenuContent')">
+                            <i class="la guidesMenuBtn"></i>
+                            Guides & Astuces
+                        </li>
+                        <li class="tabButton" onclick="toggleTab('moreMenuContent')">
+                            <i class="la moreMenuBtn"></i>
+                            Guides supplémentaires
+                        </li>
+                        <li class="tabButton" onclick="toggleTab('mapsMenuContent')">
+                            <i class="la mapsMenuBtn"></i>
+                            Maps
+                        </li>
+                        <li class="tabButton" onclick="toggleTab('searchMenuContent')">
+                            <i class="la searchMenu"></i>
+                            Recheche d'objets
+                        </li>
+                        <li class="tabButton" onclick="toggleTab('relicsMenuContent')">
+                            <i class="la relicsMenuBtn"></i>Meilleurs
+                            endroits pour farmer les reliques
+                        </li>
+                        <li class="tabButton" onclick="toggleTab('kdriveMenuContent')">
+                            <i class="la kdriveMenuBtn"></i>Contrôles
+                            K-Drive
                         </li>
                     </ul>
-                </li>
-            </ul>
-        </details>
-    </section>
-
-    <section>
-        <details class="section">
-            <summary class="title">Guides Supplémentaires</summary>
-            <ul>
-                <li>
-                    Guide ultime :
+                </div>
+                <div class="newMenuContent content" id="newMenuContent">
+                    <h1 class="title">Nouveau ou de retour sur le jeu depuis un moment ?</h1>
                     <ul>
                         <li>
-                            <a href="https://docs.google.com/document/d/1adC47dfvkHma7K3lsK110LL4crZRPNf4gIaRrGTESWE/edit?usp=sharing"
-                                target="_blank">Lien traduit automatiquement</a>
+                            <a href="https://www.warframe.com/fr/game/quickstart" target="_blank">Guide de démarrage rapide
+                                officiel</a>
                         </li>
                         <li>
-                            <a href="https://docs.google.com/document/d/1ylw9HK2ol6yam3MMNbycbuHxjmctg3gCqsbI4yy2gK0/edit"
-                                target="_blank">Lien original (en)</a>
+                            <a href="https://www.warframe.com/fr/news/new-player-guide" target="_blank">Guide pour les
+                                nouveaux
+                                joueurs officiel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.warframe.com/fr/news/returning-player-guide" target="_blank">Guide de
+                                retour
+                                officiel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.warframe.com/fr/news/operator-report" target="_blank">Récapitulatif de
+                                l'histoire</a>
                         </li>
                     </ul>
-                </li>
-            </ul>
-        </details>
-    </section>
-
-    <section>
-        <details class="section">
-            <summary class="title">Maps</summary>
-            <ul>
-                <li>
-                    <a href="https://hub.warframestat.us/poe/map" target="_blank">Map Interactive de Cetus (Terre)</a>
-                </li>
-                <li>
-                    <a href="https://hub.warframestat.us/deimos/map" target="_blank">Map Interactive du Puit de Cambion
-                        (Deimos)</a>
-                </li>
-                <li>
-                    <a href="https://hub.warframestat.us/vallis/map" target="_blank">Map Interactive de la Vallée
-                        d'Orbis
-                        (Vénus)</a>
-                </li>
-                <li>
-                    <a href="https://warframe.fandom.com/wiki/Special:AllMaps" target="_blank">Toutes les autres
-                        maps</a>
-                </li>
-            </ul>
-        </details>
-    </section>
-
-    <section>
-        <details class="section">
-            <summary class="title">Recherche d'Objets</summary>
-            <ul>
-                <h3>1ère méthode:</h3>
-                <ul>
-                    <li>
-                        Passer la souris sur l'objet en jeu, la plupart du temps il est
-                        indiqué où il est possible de l'avoir
-                    </li>
-                </ul>
-            </ul>
-            <ul>
-                <h3>2ème méthode:</h3>
-                <ol>
-                    <li>
-                        Taper le <strong>nom de l'objet recherché</strong> +
-                        <strong>warframe</strong> sur google, exemple : "Furie mod warframe"
-                    </li>
-                    <li>
-                        Aller sur le lien du
-                        <a href="https://warframe.fandom.com/fr/wiki/Furie" target="_blank">wiki</a>
-                    </li>
-                    <li>
-                        Dans l'encadré à droite, cliquez sur son nom en anglais, ça va vous
-                        mener sur le
-                        <a href="https://warframe.fandom.com/wiki/Fury" target="_blank">wiki anglais</a>
-                        qui est bcp plus complet
-                    </li>
-                    <li>Regardez la section "Drop Locations"</li>
-                </ol>
-            </ul>
-            <br />
-            <i>Note : Toujours privilégier le wiki Anglais au Français car ce dernier
-                n'est plus à jour</i>
-        </details>
-    </section>
-
-    <section>
-        <details class="section">
-            <summary class="title">Meilleurs endroits pour farmer les reliques</summary>
-            <ul>
-                <li><strong>Axi</strong> ➤ Apollo, Lua (Perturbation)</li>
-                <li><strong>Neo</strong> ➤ Ur, Uranus (Perturbation)</li>
-                <li>
-                    <strong>Neo</strong> + <strong>Meso</strong> + <strong>Aya</strong> ➤
-                    Ukko, Néant (Capture)
-                </li>
-                <li><strong>Meso</strong> ➤ Olympus, Mars (Perturbation)</li>
-                <li>
-                    <strong>Lith</strong> + <strong>Aya</strong> ➤ Hepit, Néant (Capture)
-                </li>
-            </ul>
-        </details>
-    </section>
-
-    <section>
-        <details class="section">
-            <summary class="title"><span>Contrôles par défaut pour le K-Drive</span></summary>
-            <details>
-                <summary>Figures en l'air</summary>
-                <table>
-                    <tr>
-                        <th>Nom de la figure</th>
-                        <th>Contrôles</th>
-                    </tr>
-                    <tr>
-                        <td>Copter (côté avant)</td>
-                        <td><code>Barre d'espace</code> + <code>🡅</code> ou <code>Barre d'espace</code> +
-                            <code>🡄</code>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Copter (côté arrière)</td>
-                        <td><code>Barre d'espace</code> + <code>🡆</code> ou <code>Barre d'espace</code> +
-                            <code>🡇</code>
-                        </td>
-                    </tr>
-                </table>
-            </details>
-
-            <details>
-                <summary>Saltos en l'air</summary>
-                <table>
-                    <tr>
-                        <th>Nom de la figure</th>
-                        <th>Contrôles</th>
-                    </tr>
-                    <tr>
-                        <td>Nose Planker</td>
-                        <td><code>Clic droit</code> + <code>🡅</code></td>
-                    </tr>
-                    <tr>
-                        <td>Tail Planker</td>
-                        <td><code>Clic droit</code> + <code>🡇</code></td>
-                    </tr>
-                    <tr>
-                        <td>Frontside Rollout</td>
-                        <td><code>Clic droit</code> + <code>🡆</code></td>
-                    </tr>
-                    <tr>
-                        <td>Backside Rollout</td>
-                        <td><code>Clic droit</code> + <code>🡄</code></td>
-                    </tr>
-                </table>
-            </details>
-
-            <details>
-                <summary>Saisies de planche en l'air</summary>
-                <table>
-                    <tr>
-                        <th>Nom de la figure</th>
-                        <th>Contrôles</th>
-                    </tr>
-                    <tr>
-                        <td>Nose Clutch</td>
-                        <td><code>Clic gauche</code> + <code>🡅</code></td>
-                    </tr>
-                    <tr>
-                        <td>Tail Clutch</td>
-                        <td><code>Clic gauche</code> + <code>🡇</code></td>
-                    </tr>
-                    <tr>
-                        <td>Frontside Clutch</td>
-                        <td><code>Clic gauche</code> + <code>🡆</code></td>
-                    </tr>
-                    <tr>
-                        <td>Backside Clutch</td>
-                        <td><code>Clic gauche</code> + <code>🡄</code></td>
-                    </tr>
-                </table>
-            </details>
-
-            <details>
-                <summary>Saisies de planche / Grabs + Saltos / Flips</summary>
-                <table>
-                    <tr>
-                        <th>Nom de la figure</th>
-                        <th>Contrôles</th>
-                    </tr>
-                    <tr>
-                        <td>Nose Spinja</td>
-                        <td><code>Clic gauche</code> + <code>🡅</code>, puis <code>Barre d'espace</code></td>
-                    </tr>
-                    <tr>
-                        <td>Tail Spinja</td>
-                        <td><code>Clic gauche</code> + <code>🡇</code>, puis <code>Barre d'espace</code></td>
-                    </tr>
-                    <tr>
-                        <td>Frontside Spinja</td>
-                        <td><code>Clic gauche</code> + <code>🡆</code>, puis <code>Barre d'espace</code></td>
-                    </tr>
-                    <tr>
-                        <td>Backside Spinja</td>
-                        <td><code>Clic gauche</code> + <code>🡄</code>, puis <code>Barre d'espace</code></td>
-                    </tr>
-                    <tr>
-                        <td>Nose Clutch Planker</td>
-                        <td><code>Clic gauche</code> + <code>🡅</code>, puis <code>Clic droit</code></td>
-                    </tr>
-                    <tr>
-                        <td>Tail Clutch Planker</td>
-                        <td><code>Clic gauche</code> + <code>🡇</code>, puis <code>Clic droit</code></td>
-                    </tr>
-                    <tr>
-                        <td>Frontside Skyrocker</td>
-                        <td><code>Clic gauche</code> + <code>🡆</code>, puis <code>Clic droit</code></td>
-                    </tr>
-                    <tr>
-                        <td>Backside Skyrocker</td>
-                        <td><code>Clic gauche</code> + <code>🡄</code>, puis <code>Clic droit</code></td>
-                    </tr>
-                </table>
-            </details>
-
-            <details>
-                <summary>Saut → Déclenchement d'une onde de choc</summary>
-                <p><code>Barre d'espace</code>, puis appuyez sur <code>LCtrl</code>, puis maintenez <code>LCtrl</code>
-                    enfoncé
-                </p>
-                <p>Les joueurs peuvent effectuer des figures ou des manœuvres avancées en combinant les commandes du
-                    K-Drive.
-                </p>
-            </details>
-
-            <details>
-                <summary>Combinaisons de rotations et de saltos</summary>
-                <p>En l'air, appuyez de nouveau sur la touche de saut (par défaut <code>Barre d'espace</code> sur PC)
-                    pour
-                    effectuer une figure Copter (360 avant). Les touches suivantes permettent également d'effectuer des
-                    rotations :</p>
-                <ul>
-                    <li><code>Barre d'espace</code> + <code>🡅</code> ou <code>Barre d'espace</code> + <code>🡄</code> :
-                        Copter
-                        (côté avant)</li>
-                    <li><code>Barre d'espace</code> + <code>🡆</code> ou <code>Barre d'espace</code> + <code>🡇</code> :
-                        Copter
-                        (côté arrière)</li>
-                </ul>
-                <p>En maintenant la touche de s'accroupir enfoncée (par défaut <code>Ctrl</code> sur PC) tout en se
-                    déplaçant
-                    sur le sol, les animations Copter seront également exécutées, bien que des points de figure ne
-                    puissent
-                    pas
-                    être gagnés à partir d'elles.</p>
-                <p>Les combinaisons de touches suivantes effectueront des saltos :</p>
-                <ul>
-                    <li><code>Clic droit</code> + <code>🡅</code> : Nose Planker</li>
-                    <li><code>Clic droit</code> + <code>🡇</code> : Tail Planker</li>
-                    <li><code>Clic droit</code> + <code>🡆</code> : Frontside Rollout</li>
-                    <li><code>Clic droit</code> + <code>🡄</code> : Backside Rollout</li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>Saisies de planche / Grabs</summary>
-                <p>En l'air, maintenir les combinaisons de touches suivantes effectuera des saisies de style sur le
-                    K-Drive
-                    :
-                </p>
-                <ul>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡅</code> : Nose Clutch</li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡇</code> : Tail Clutch</li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡆</code> : Frontside Clutch</li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡄</code> : Backside Clutch</li>
-                </ul>
-                <p>Pendant une glissade, effectuez n'importe quelle combinaison de contrôles (<code>Clic gauche</code> +
-                    n'importe quelle touche de déplacement) pour ajouter plus de style à votre glissade.</p>
-            </details>
-
-            <details>
-                <summary>Combinaisons de contrôles</summary>
-                <p>Combine des contrôles de planche avec des rotations et des torsions pour des acrobaties encore plus
-                    stylées.
-                    Maintenez les deux premières touches enfoncées avant d'ajouter la troisième touche.</p>
-                <ul>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡅</code>, puis <code>Barre d'espace</code> : Nose
-                        Spinja
-                    </li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡇</code>, puis <code>Barre d'espace</code> : Tail
-                        Spinja
-                    </li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡆</code>, puis <code>Barre d'espace</code> :
-                        Frontside
-                        Spinja</li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡄</code>, puis <code>Barre d'espace</code> :
-                        Backside
-                        Spinja
-                    </li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡅</code>, puis <code>Clic droit</code> : Nose Clutch
-                        Planker
-                    </li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡇</code>, puis <code>Clic droit</code> : Tail Clutch
-                        Planker
-                    </li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡆</code>, puis <code>Clic droit</code> : Frontside
-                        Skyrocker
-                    </li>
-                    <li>Maintenir <code>Clic gauche</code> + <code>🡄</code>, puis <code>Clic droit</code> : Backside
-                        Skyrocker
-                    </li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>Onde de choc au sol</summary>
-                <p>Crée une onde de choc de 4 mètres qui inflige 100 dégâts d'impact et les impacts directs infligent
-                    1000
-                    dégâts d'impact. Voici les commandes pour effectuer une onde de choc au sol :</p>
-                <p><code>Barre d'espace</code>, puis appuyez sur <code>LCtrl</code>, puis maintenez <code>LCtrl</code>
-                    enfoncé.
-                </p>
-            </details>
-        </details>
-
-    </section>
-
-
-    <hr />
-
-</body>
+                </div>
+                <div class="guidesMenuContent content" id="guidesMenuContent">
+                    <h1 class="title">Guides et Astuces</h1>
+                    <ul>
+                        <li>
+                            <a href="https://overframe.gg/tier-list/warframes/" target="_blank">Pour voir les meilleurs
+                                builds</a>
+                        </li>
+                        <li>
+                            <a href="https://warframe.fandom.com/fr/wiki/D%C3%A9g%C3%A2ts" target="_blank">Dégâts,
+                                résistances & faiblesse des ennemis</a>
+                        </li>
+                        <li>
+                            <a href="https://vvhitewarframe.fr/" target="_blank">Tutos en tout genre</a>
+                        </li>
+                        <li>
+                            <a href="https://www.alecaframe.com/" target="_blank">Trouver des pièces d'armes de warframes
+                                etc</a>
+                        </li>
+                        <li>
+                            <a href="https://warframe.market/" target="_blank">Voir, acheter & vendre des pièces Prime
+                                contre du
+                                Platine</a>
+                        </li>
+                        <li>
+                            <a href="https://hub.warframestat.us/" target="_blank">Infos concernant l'état des mondes &
+                                évènements
+                                du jeu en temps
+                                réel</a>
+                        </li>
+                        <li>
+                            <a href="https://www.warframe.com/fr/droptables" target="_blank">Site officiel des drops sur
+                                Warframe</a>
+                        </li>
+                        <li>
+                            <a href="https://wf.xuerian.net/#welcome" target="_blank">Pour les férus de reliques</a>
+                        </li>
+                        <li>
+                            <a href="https://www.warframe.com/fr/mobile-app" target="_blank">Appli mobile officielle</a>
+                        </li>
+                        <li>
+                            Deux très bons youtubeurs Français pour des tutos & astuces de farm,
+                            etc :
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/@PANDAAHH/videos" target="_blank">Pandaah</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCffeBUU4GfgCouaNt-h_-tw"
+                                        target="_blank">VVhite
+                                        Angel</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="moreMenuContent content" id="moreMenuContent">
+                    <h1 class="title">Guides Supplémentaires</h1>
+                    <ul>
+                        <li>
+                            Guide ultime :
+                            <ul>
+                                <li>
+                                    <a href="https://docs.google.com/document/d/1adC47dfvkHma7K3lsK110LL4crZRPNf4gIaRrGTESWE/edit?usp=sharing"
+                                        target="_blank">Lien traduit automatiquement</a>
+                                </li>
+                                <li>
+                                    <a href="https://docs.google.com/document/d/1ylw9HK2ol6yam3MMNbycbuHxjmctg3gCqsbI4yy2gK0/edit"
+                                        target="_blank">Lien original (en)</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mapsMenuContent content" id="mapsMenuContent">
+                    <h1 class="title">Maps</h1>
+                    <ul>
+                        <li>
+                            <a href="https://hub.warframestat.us/poe/map" target="_blank">Map Interactive de Cetus
+                                (Terre)</a>
+                        </li>
+                        <li>
+                            <a href="https://hub.warframestat.us/deimos/map" target="_blank">Map Interactive du Puit de
+                                Cambion
+                                (Deimos)</a>
+                        </li>
+                        <li>
+                            <a href="https://hub.warframestat.us/vallis/map" target="_blank">Map Interactive de la Vallée
+                                d'Orbis
+                                (Vénus)</a>
+                        </li>
+                        <li>
+                            <a href="https://warframe.fandom.com/wiki/Special:AllMaps" target="_blank">Toutes les autres
+                                maps</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchMenuContent content" id="searchMenuContent">
+                    <h1 class="title">Recherche d'Objets</h1>
+                    <ul>
+                        <h3>1ère méthode:</h3>
+                        <ul>
+                            <li>
+                                Passer la souris sur l'objet en jeu, la plupart du temps il est
+                                indiqué où il est possible de l'avoir
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <h3>2ème méthode:</h3>
+                        <ol>
+                            <li>
+                                Taper le <strong>nom de l'objet recherché</strong> +
+                                <strong>warframe</strong> sur google, exemple : "Furie mod warframe"
+                            </li>
+                            <li>
+                                Aller sur le lien du
+                                <a href="https://warframe.fandom.com/fr/wiki/Furie" target="_blank">wiki</a>
+                            </li>
+                            <li>
+                                Dans l'encadré à droite, cliquez sur son nom en anglais, ça va vous
+                                mener sur le
+                                <a href="https://warframe.fandom.com/wiki/Fury" target="_blank">wiki anglais</a>
+                                qui est bcp plus complet
+                            </li>
+                            <li>Regardez la section "Drop Locations"</li>
+                        </ol>
+                    </ul>
+                    <br />
+                    <i>Note : Toujours privilégier le wiki Anglais au Français car ce dernier
+                        n'est pas toujours à jour</i>
+                </div>
+                <div class="relicsMenuContent content" id="relicsMenuContent">
+                    <h1 class="title">Meilleurs endroits pour farmer les reliques</h1>
+                    <ul>
+                        <li><strong>Axi</strong> ➤ Apollo, Lua (Perturbation)</li>
+                        <li><strong>Neo</strong> ➤ Ur, Uranus (Perturbation)</li>
+                        <li>
+                            <strong>Neo</strong> + <strong>Meso</strong> + <strong>Aya</strong> ➤
+                            Ukko, Néant (Capture)
+                        </li>
+                        <li><strong>Meso</strong> ➤ Olympus, Mars (Perturbation)</li>
+                        <li>
+                            <strong>Lith</strong> + <strong>Aya</strong> ➤ Hepit, Néant (Capture)
+                        </li>
+                    </ul>
+                </div>
+                <div class="kdriveMenuContent content" id="kdriveMenuContent">
+                    <h1 class="title"><span>Contrôles par défaut pour le K-Drive</span></h1>
+                    <details>
+                        <summary>Figures en l'air</summary>
+                        <table>
+                            <tr>
+                                <th>Nom de la figure</th>
+                                <th>Contrôles</th>
+                            </tr>
+                            <tr>
+                                <td>Copter (côté avant)</td>
+                                <td><code>Barre d'espace</code> + <code>🡅</code> ou <code>Barre d'espace</code> +
+                                    <code>🡄</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Copter (côté arrière)</td>
+                                <td><code>Barre d'espace</code> + <code>🡆</code> ou <code>Barre d'espace</code> +
+                                    <code>🡇</code>
+                                </td>
+                            </tr>
+                        </table>
+                    </details>
+    
+                    <details>
+                        <summary>Saltos en l'air</summary>
+                        <table>
+                            <tr>
+                                <th>Nom de la figure</th>
+                                <th>Contrôles</th>
+                            </tr>
+                            <tr>
+                                <td>Nose Planker</td>
+                                <td><code>Clic droit</code> + <code>🡅</code></td>
+                            </tr>
+                            <tr>
+                                <td>Tail Planker</td>
+                                <td><code>Clic droit</code> + <code>🡇</code></td>
+                            </tr>
+                            <tr>
+                                <td>Frontside Rollout</td>
+                                <td><code>Clic droit</code> + <code>🡆</code></td>
+                            </tr>
+                            <tr>
+                                <td>Backside Rollout</td>
+                                <td><code>Clic droit</code> + <code>🡄</code></td>
+                            </tr>
+                        </table>
+                    </details>
+    
+                    <details>
+                        <summary>Saisies de planche en l'air</summary>
+                        <table>
+                            <tr>
+                                <th>Nom de la figure</th>
+                                <th>Contrôles</th>
+                            </tr>
+                            <tr>
+                                <td>Nose Clutch</td>
+                                <td><code>Clic gauche</code> + <code>🡅</code></td>
+                            </tr>
+                            <tr>
+                                <td>Tail Clutch</td>
+                                <td><code>Clic gauche</code> + <code>🡇</code></td>
+                            </tr>
+                            <tr>
+                                <td>Frontside Clutch</td>
+                                <td><code>Clic gauche</code> + <code>🡆</code></td>
+                            </tr>
+                            <tr>
+                                <td>Backside Clutch</td>
+                                <td><code>Clic gauche</code> + <code>🡄</code></td>
+                            </tr>
+                        </table>
+                    </details>
+    
+                    <details>
+                        <summary>Saisies de planche / Grabs + Saltos / Flips</summary>
+                        <table>
+                            <tr>
+                                <th>Nom de la figure</th>
+                                <th>Contrôles</th>
+                            </tr>
+                            <tr>
+                                <td>Nose Spinja</td>
+                                <td><code>Clic gauche</code> + <code>🡅</code>, puis <code>Barre d'espace</code></td>
+                            </tr>
+                            <tr>
+                                <td>Tail Spinja</td>
+                                <td><code>Clic gauche</code> + <code>🡇</code>, puis <code>Barre d'espace</code></td>
+                            </tr>
+                            <tr>
+                                <td>Frontside Spinja</td>
+                                <td><code>Clic gauche</code> + <code>🡆</code>, puis <code>Barre d'espace</code></td>
+                            </tr>
+                            <tr>
+                                <td>Backside Spinja</td>
+                                <td><code>Clic gauche</code> + <code>🡄</code>, puis <code>Barre d'espace</code></td>
+                            </tr>
+                            <tr>
+                                <td>Nose Clutch Planker</td>
+                                <td><code>Clic gauche</code> + <code>🡅</code>, puis <code>Clic droit</code></td>
+                            </tr>
+                            <tr>
+                                <td>Tail Clutch Planker</td>
+                                <td><code>Clic gauche</code> + <code>🡇</code>, puis <code>Clic droit</code></td>
+                            </tr>
+                            <tr>
+                                <td>Frontside Skyrocker</td>
+                                <td><code>Clic gauche</code> + <code>🡆</code>, puis <code>Clic droit</code></td>
+                            </tr>
+                            <tr>
+                                <td>Backside Skyrocker</td>
+                                <td><code>Clic gauche</code> + <code>🡄</code>, puis <code>Clic droit</code></td>
+                            </tr>
+                        </table>
+                    </details>
+    
+                    <details>
+                        <summary>Saut → Déclenchement d'une onde de choc</summary>
+                        <p><code>Barre d'espace</code>, puis appuyez sur <code>LCtrl</code>, puis maintenez
+                            <code>LCtrl</code>
+                            enfoncé
+                        </p>
+                        <p>Les joueurs peuvent effectuer des figures ou des manœuvres avancées en combinant les commandes du
+                            K-Drive.
+                        </p>
+                    </details>
+    
+                    <details>
+                        <summary>Combinaisons de rotations et de saltos</summary>
+                        <p>En l'air, appuyez de nouveau sur la touche de saut (par défaut <code>Barre d'espace</code> sur
+                            PC)
+                            pour
+                            effectuer une figure Copter (360 avant). Les touches suivantes permettent également d'effectuer
+                            des
+                            rotations :</p>
+                        <ul>
+                            <li><code>Barre d'espace</code> + <code>🡅</code> ou <code>Barre d'espace</code> +
+                                <code>🡄</code> :
+                                Copter
+                                (côté avant)</li>
+                            <li><code>Barre d'espace</code> + <code>🡆</code> ou <code>Barre d'espace</code> +
+                                <code>🡇</code> :
+                                Copter
+                                (côté arrière)</li>
+                        </ul>
+                        <p>En maintenant la touche de s'accroupir enfoncée (par défaut <code>Ctrl</code> sur PC) tout en se
+                            déplaçant
+                            sur le sol, les animations Copter seront également exécutées, bien que des points de figure ne
+                            puissent
+                            pas
+                            être gagnés à partir d'elles.</p>
+                        <p>Les combinaisons de touches suivantes effectueront des saltos :</p>
+                        <ul>
+                            <li><code>Clic droit</code> + <code>🡅</code> : Nose Planker</li>
+                            <li><code>Clic droit</code> + <code>🡇</code> : Tail Planker</li>
+                            <li><code>Clic droit</code> + <code>🡆</code> : Frontside Rollout</li>
+                            <li><code>Clic droit</code> + <code>🡄</code> : Backside Rollout</li>
+                        </ul>
+                    </details>
+    
+                    <details>
+                        <summary>Saisies de planche / Grabs</summary>
+                        <p>En l'air, maintenir les combinaisons de touches suivantes effectuera des saisies de style sur le
+                            K-Drive
+                            :
+                        </p>
+                        <ul>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡅</code> : Nose Clutch</li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡇</code> : Tail Clutch</li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡆</code> : Frontside Clutch</li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡄</code> : Backside Clutch</li>
+                        </ul>
+                        <p>Pendant une glissade, effectuez n'importe quelle combinaison de contrôles
+                            (<code>Clic gauche</code> +
+                            n'importe quelle touche de déplacement) pour ajouter plus de style à votre glissade.</p>
+                    </details>
+    
+                    <details>
+                        <summary>Combinaisons de contrôles</summary>
+                        <p>Combine des contrôles de planche avec des rotations et des torsions pour des acrobaties encore
+                            plus
+                            stylées.
+                            Maintenez les deux premières touches enfoncées avant d'ajouter la troisième touche.</p>
+                        <ul>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡅</code>, puis <code>Barre d'espace</code> :
+                                Nose
+                                Spinja
+                            </li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡇</code>, puis <code>Barre d'espace</code> :
+                                Tail
+                                Spinja
+                            </li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡆</code>, puis <code>Barre d'espace</code> :
+                                Frontside
+                                Spinja</li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡄</code>, puis <code>Barre d'espace</code> :
+                                Backside
+                                Spinja
+                            </li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡅</code>, puis <code>Clic droit</code> : Nose
+                                Clutch
+                                Planker
+                            </li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡇</code>, puis <code>Clic droit</code> : Tail
+                                Clutch
+                                Planker
+                            </li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡆</code>, puis <code>Clic droit</code> :
+                                Frontside
+                                Skyrocker
+                            </li>
+                            <li>Maintenir <code>Clic gauche</code> + <code>🡄</code>, puis <code>Clic droit</code> :
+                                Backside
+                                Skyrocker
+                            </li>
+                        </ul>
+                    </details>
+    
+                    <details>
+                        <summary>Onde de choc au sol</summary>
+                        <p>Crée une onde de choc de 4 mètres qui inflige 100 dégâts d'impact et les impacts directs
+                            infligent
+                            1000
+                            dégâts d'impact. Voici les commandes pour effectuer une onde de choc au sol :</p>
+                        <p><code>Barre d'espace</code>, puis appuyez sur <code>LCtrl</code>, puis maintenez
+                            <code>LCtrl</code>
+                            enfoncé.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tabContents = document.querySelectorAll('.content');
+            tabContents.forEach(function (content, index) {
+                if (index !== 0) {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    
+        function toggleTab(tabId) {
+            var tabButtons = document.querySelectorAll('.tabButton');
+            tabButtons.forEach(function (button) {
+                button.classList.remove('activeTab');
+            });
+    
+            var currentTabButton = document.querySelector('[onclick="toggleTab(\'' + tabId + '\')"]');
+            currentTabButton.classList.add('activeTab');
+    
+            var tabContents = document.querySelectorAll('.content');
+    
+            tabContents.forEach(function (content) {
+                content.style.display = 'none';
+            });
+    
+            var currentTabContent = document.getElementById(tabId);
+            if (currentTabContent) {
+                currentTabContent.style.display = 'block';
+            }
+        }
+    </script>
 
 </html>
